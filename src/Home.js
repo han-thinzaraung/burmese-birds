@@ -5,7 +5,7 @@ import bird3 from './bird3.jpg';
 
 export default function Home() {
   return (
-    <div className="container col-md-10 mx-auto bg-dark">
+    <div>
 
       <div id="demo" className="carousel slide" data-bs-ride="carousel">
 

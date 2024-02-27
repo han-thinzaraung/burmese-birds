@@ -4,9 +4,10 @@ import useFetch from "./useFetch";
 const BirdDetails = () => {
     const history = useHistory();
     const { id } = useParams();
-    const { data: bird, error, isPending } = useFetch('http://localhost:3001/Tbl_Bird/' + id);
+    // console.log(id);
+    const { data: bird, error, isPending } = useFetch('https://birds-json.vercel.app//Tbl_Bird/' + id);
     const handleClick = () => {
-        fetch('http://localhost:3001/Tbl_Bird/' + id, {
+        fetch('https://birds-json.vercel.app//Tbl_Bird/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
@@ -19,7 +20,7 @@ const BirdDetails = () => {
         history.goBack(); // Go back to the previous page
     };
     return (
-        <div className="container col-md-10 mx-auto bg-dark">
+        <div className="container-fluid px-5">
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
             {bird && (

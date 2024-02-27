@@ -6,14 +6,14 @@ function Birds() {
     const [birds, setBirds] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/Tbl_Bird')
+        fetch('https://birds-json.vercel.app//Tbl_Bird')
             .then(response => response.json())
             .then(data => setBirds(data))
             .catch(error => console.log('Error fetching bird data:', error));
     }, []);
 
     return (
-        <div className="container col-md-10 mx-auto bg-dark">
+        <div className="container-fluid px-5 py-3">
             <div className="row">
                 {birds.map(bird => (
                     <div className="col-lg-4 mb-4" key={bird.Id}>

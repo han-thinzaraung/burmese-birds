@@ -9,7 +9,7 @@ import BirdDetails from './BirdDetails';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="bg-dark">
         <Navbar />
         <div className='content'>
           <Switch>

@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
 
 export default function Navbar() {
     return (
-        <div className="col-md-10 mx-auto">
-            <nav className="navbar navbar-expand-sm bg-dark navbar-dark mx-auto">
+        <div>
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark ">
                 <div className="container-fluid px-5">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span className="navbar-toggler-icon"></span>
