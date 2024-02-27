@@ -5,9 +5,9 @@ const BirdDetails = () => {
     const history = useHistory();
     const { id } = useParams();
     // console.log(id);
-    const { data: bird, error, isPending } = useFetch('https://birds-json.vercel.app//Tbl_Bird/' + id);
+    const { data: bird, error, isPending } = useFetch('https://birds-json.vercel.app/Tbl_Bird/' + id);
     const handleClick = () => {
-        fetch('https://birds-json.vercel.app//Tbl_Bird/' + id, {
+        fetch('https://birds-json.vercel.app/Tbl_Bird/' + id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');

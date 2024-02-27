@@ -6,7 +6,7 @@ function Birds() {
     const [birds, setBirds] = useState([]);
 
     useEffect(() => {
-        fetch('https://birds-json.vercel.app//Tbl_Bird')
+        fetch('https://birds-json.vercel.app/Tbl_Bird')
             .then(response => response.json())
             .then(data => setBirds(data))
             .catch(error => console.log('Error fetching bird data:', error));
