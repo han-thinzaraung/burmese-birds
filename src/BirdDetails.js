@@ -7,7 +7,7 @@ const BirdDetails = () => {
     // console.log(id);
     const { data: bird, error, isPending } = useFetch('https://birds-json.vercel.app/Tbl_Bird/' + id);
     const handleClick = () => {
-        fetch('https://birds-json.vercel.app/Tbl_Bird/' + id, {
+        fetch('https://birds-json.vercel.app/Tbl_Bird/' + bird.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');

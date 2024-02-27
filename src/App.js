@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Birds from './Birds';
 import BirdDetails from './BirdDetails';
+import Footer from './Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer/>
       </div>
 
     </Router>
