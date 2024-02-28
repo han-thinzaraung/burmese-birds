@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
      
-     <div class="container text-center">
+     <div class="container text-center py-5">
             <img src={bird} style={{width: '30px'}} alt="Bird Image"  className='rounded-4 mb-3'/>
             <div class="footer-links">
                 <Link to="/">Home</Link>
