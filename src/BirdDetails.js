@@ -26,7 +26,7 @@ const BirdDetails = () => {
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
             {bird && (
-                <div className="row vh-100 justify-content-center align-items-center p-5" data-aos="fade-up" data-aos-duration="1000">
+                <div className="row d-flex justify-content-center align-items-center p-5" data-aos="fade-up" data-aos-duration="1000">
                     <div className="col-md-4">
                         <div className="card shadow rounded-5">
                             <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top rounded-5" alt="Bird" />

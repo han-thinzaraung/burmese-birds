@@ -52,12 +52,12 @@ export default function Home() {
       <div className='container-fluid text-white p-5'>
         <div className='row'>
           <div className='col-md-8 mt-5'>
-          <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <div data-aos="fade-right" data-aos-duration="800">
           <p>
             Our network of over 2 million birders, scientists and local volunteers helps us to track, follow, analyse, conserve and understand every bird species.
           </p>
           </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4"  data-aos="zoom-in" data-aos-duration="800">
+            <div class="row row-cols-1 row-cols-md-4 g-4"  data-aos="zoom-in">
               <div class="col">
                 <div class="card bg-secondary rounded-5 shadow">
                   <div class="card-body text-center">
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='col-md-4 text-center mt-3 mb-3'  data-aos="zoom-in" data-aos-duration="800">
+          <div className='col-md-4 text-center mt-3 mb-3'  data-aos="zoom-in">
             <div className="row">
               <div className='col-md-6 mb-3'>
                 <a href="https://my.wikipedia.org/wiki/%E1%80%84%E1%80%BE%E1%80%80%E1%80%BA" style={{ textDecoration: 'none' }}>
