@@ -1,6 +1,6 @@
 import React from 'react';
-import bird1 from './bird1.jpg';
-import bird3 from './bird3.jpg';
+import bird1 from './birds1.jpg';
+import bird2 from './birds2.jpg';
 import feather from './feather.png';
 import pinterest from './pinterest.png';
 
@@ -26,7 +26,7 @@ export default function Home() {
             <img src={bird2} alt="Bird2" className="d-block w-100 image" />
           </div> */}
           <div className="carousel-item">
-            <img src={bird3} alt="Bird2" className="d-block w-100 image" />
+            <img src={bird2} alt="Bird2" className="d-block w-100 image" />
           </div>
         </div>
 
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
             <div class="row row-cols-1 row-cols-md-4 g-4"  data-aos="zoom-in">
               <div class="col">
-                <div class="card bg-secondary rounded-5 shadow">
+                <div class="card bg-white rounded-5 shadow">
                   <div class="card-body text-center">
                     <h5 class="card-title">8600</h5>
                     <p class="card-text">Total Species</p>
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <div class="card bg-secondary rounded-5 shadow">
+                <div class="card bg-white rounded-5 shadow">
                   <div class="card-body text-center">
                     <h5 class="card-title">1600</h5>
                     <p class="card-text">Collective</p>
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <div class="card bg-secondary rounded-5 shadow">
+                <div class="card bg-white rounded-5 shadow">
                   <div class="card-body text-center">
                     <h5 class="card-title">155</h5>
                     <p class="card-text">Total Races</p>
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <div class="card bg-secondary rounded-5 shadow">
+                <div class="card bg-white rounded-5 shadow">
                   <div class="card-body text-center">
                     <h5 class="card-title text-center">2</h5>
                     <p class="card-text">Generations</p>

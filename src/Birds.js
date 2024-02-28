@@ -22,7 +22,7 @@ function Birds() {
                 {birds.map(bird => (
                     <div className="col-lg-4 mb-4" key={bird.Id}>
                         <div className="card bg-dark text-white">
-                            <Link to={`/birddetails/${bird.id}`}> <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top" alt="Bird" /></Link>
+                            <Link to={`/birddetails/${bird.id}`}> <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top custom-card" alt="Bird" /></Link>
                             <div className="card-body shadow rounded-5">
                                 <h5 className="card-title mb-3">{bird.BirdEnglishName}</h5>
                                 <p className="card-text mb-3">{bird.BirdMyanmarName}</p>

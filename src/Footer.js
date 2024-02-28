@@ -12,7 +12,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
                 <Link to="/birds">Birds</Link>
             </div>
-            <p class="text-secondary p-3">© 2024 All rights reserved By WordPress River</p>
+            <p class="text-secondary p-3">© 2024 All rights reserved By HTZA GIC Co. Ltd.,</p>
         </div>
     </>
 
