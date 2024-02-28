@@ -1,19 +1,20 @@
-import { Link } from "react-router-dom/cjs/react-router-dom";
-const Footer = () => {
+import React from 'react'
+import bird from './bird.png';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-    return ( 
-        <>
-        <div className="row">
-            <div className="col-md-6">
-            <Link to="/" className="nav-link">Home</Link>
+export default function Footer() {
+  return (
+    <>
+     
+     <div class="container text-center">
+            <img src={bird} style={{width: '30px'}} alt="Bird Image"  className='rounded-4 mb-3'/>
+            <div class="footer-links">
+                <Link to="/">Home</Link>
+                <Link to="/birds">Birds</Link>
             </div>
-            <div className="col-md-6">
-            <Link to="/birds" className="nav-link">Birds</Link>
-            </div>
+            <p class="text-secondary p-3">© 2024 All rights reserved By WordPress River</p>
         </div>
-        <p>© All rights reserved by WordPress River</p>
-        </>
-     );
+    </>
+
+  )
 }
- 
-export default Footer;

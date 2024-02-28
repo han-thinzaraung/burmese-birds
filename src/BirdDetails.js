@@ -1,5 +1,7 @@
 import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch from "./useFetch";
+import { FaTrash } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 const BirdDetails = () => {
     const history = useHistory();
@@ -24,21 +26,21 @@ const BirdDetails = () => {
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
             {bird && (
-                <div className="row vh-100 justify-content-center align-items-center">
+                <div className="row vh-100 justify-content-center align-items-center p-5" data-aos="fade-up" data-aos-duration="1000">
                     <div className="col-md-4">
-                        <div className="card shadow rounded-2">
-                            <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top" alt="Bird" />
+                        <div className="card shadow rounded-5">
+                            <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top rounded-5" alt="Bird" />
                         </div>
                     </div>
                     <div className="col-md-8 ">
                         <div className="card bg-secondary shadow rounded-5">
                             <div className="card-body text-white">
-                                <h2 className="card-title">{bird.BirdEnglishName}</h2>
-                                <h3 className="card-subtitle mb-2 text-light">{bird.BirdMyanmarName}</h3>
-                                <p className="card-text">{bird.Description}</p>
-                                <div className="d-flex justify-content-around">
-                                    <button className="btn btn-outline-dark" onClick={handleBack}>Back</button>
-                                    <button className="btn btn-outline-warning" onClick={handleClick}>Delete</button>
+                                <h3 className="card-title text-center mb-3">{bird.BirdEnglishName}</h3>
+                                <h5 className="card-subtitle text-center text-light mb-3">{bird.BirdMyanmarName}</h5>
+                                <p className="card-text px-3">{bird.Description}</p>
+                                <div className="d-flex justify-content-around mt-3">
+                                    <button className="btn btn-dark custom-icon" onClick={handleBack}><FaArrowAltCircleLeft /></button>
+                                    <button className="btn btn-dark custom-icon" onClick={handleClick}><FaTrash/></button>
                                 </div>
                             </div>
                         </div>
