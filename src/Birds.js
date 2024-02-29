@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowRightCircle } from "react-icons/fi";
+
 
 
 function Birds() {
@@ -17,13 +17,13 @@ function Birds() {
     }, []);
 
     return (
-        <div className="container-fluid px-5 py-3" id="birds"  data-aos="fade-up" data-aos-duration="1000">
+        <div className="container-fluid px-5 py-3" id="birds">
             <div className="row">
                 {birds.map(bird => (
-                    <div className="col-lg-4 mb-4" key={bird.Id}>
-                        <div className="card bg-dark text-white">
-                            <Link to={`/birddetails/${bird.id}`}> <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top custom-card" alt="Bird" /></Link>
-                            <div className="card-body shadow rounded-5">
+                    <div className="col-lg-3 mb-4" key={bird.Id} data-aos="flip-down" data-aos-duration="1000">
+                        <div className="card bg-dark text-white border-0">
+                            <Link to={`/birddetails/${bird.id}`}> <img src={process.env.PUBLIC_URL + '/' + bird.ImagePath} className="card-img-top custom-card rounded-3" alt="Bird" /></Link>
+                            <div className="card-body shadow rounded-5 border-0">
                                 <h5 className="card-title mb-3">{bird.BirdEnglishName}</h5>
                                 <p className="card-text mb-3">{bird.BirdMyanmarName}</p>
                             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import bird1 from './birds1.jpg';
-import bird2 from './birds2.jpg';
+import bird1 from './birds2.jpg';
+import bird3 from './birds3.jpg';
 import feather from './feather.png';
 import pinterest from './pinterest.png';
 
@@ -26,7 +26,7 @@ export default function Home() {
             <img src={bird2} alt="Bird2" className="d-block w-100 image" />
           </div> */}
           <div className="carousel-item">
-            <img src={bird2} alt="Bird2" className="d-block w-100 image" />
+            <img src={bird3} alt="Bird3" className="d-block w-100 image" />
           </div>
         </div>
 
